@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>my hobbies</title>
+    <meta charset="utf-8" />
+    <script src="../scripts/my_hobbies.js"></script>
+    <script src="../scripts/menu.js"></script>
+    <link rel="stylesheet" href="../styles/main_style.css" />
+  </head>
+
+  <body>
+    <div class="strip" id="strip">
+      <script>
+        createMyHobbies();
+        createMenu();
+      </script>
+    </div>
+
+    <div class="menu">
+      <a href="main_page.html">
+        <h2>Главная страница</h2>
+      </a>
+      <a href="about.html">
+        <h2>Обо мне</h2>
+      </a>
+      <div class="dropdown">
+        <h2 class="dropdown-button">Интересы</h2>
+        <ul class="dropdown-content">
+          <li>
+            <a href="interests.html#Хобби"><h2>Хобби</h2></a>
+          </li>
+          <li>
+            <a href="interests.html#Книги"><h2>Книги</h2></a>
+          </li>
+          <li>
+            <a href="interests.html#Музыка"><h2>Музыка</h2></a>
+          </li>
+          <li>
+            <a href="interests.html#Фильмы"><h2>Фильмы</h2></a>
+          </li>
+        </ul>
+      </div>
+      <a href="lessons.html">
+        <h2>Учёба</h2>
+      </a>
+      <a href="album.html">
+        <h2>Альбом</h2>
+      </a>
+      <a href="contacts.html">
+        <h2>Связь</h2>
+      </a>
+      <a href="test.html">
+        <h2>Тест</h2>
+      </a>
+      <a href="history.html">
+        <h2>История</h2>
+      </a>
+      <h2 id="date">date</h2>
+    </div>
+
+    <script src="../scripts/history_tracker.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+@use "main_style"
+
+.text
+    background-color: main_style.$secondary_color
+    color: main_style.$text_color
+    border: 1px solid main_style.$triplet_color
+    border-radius: main_style.$standart_box_radius
+    padding: 12px 16px
+    font-size: 16px
+    width: 100%
+    box-sizing: border-box
+    box-shadow: main_style.$standart_box_shadow
+    transition: all 0.3s ease
+
+    &:focus
+        outline: none
+        border-color: main_style.$triplet_color
+        box-shadow:  main_style.$standart_box_shadow
+
+.accept 
+    background-color: #036d26
+    border: 1px solid #05792b
+    animation: sizeUp 0.6s
+
+.error 
+    background-color: #6d0303
+    border: 1px solid #960505
+    animation: shake 0.4s
+    
+
+select
+    @extend .text
+    option 
+        background-color: #2e0b45
+        color: #ffffff
+
+textarea 
+    @extend .text
+    resize: vertical
+    min-height: 50px
+
+li 
+    list-style: none
+
+ul 
+    margin: 0
+    padding: 0

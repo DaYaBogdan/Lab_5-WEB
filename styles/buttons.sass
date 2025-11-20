@@ -1,0 +1,74 @@
+@use "main_style"
+
+.buttons
+    @include main_style.everything_center()
+    position: absolute
+    top: calc(16% + 800px + 2%)
+    left: calc(39% + 500px / 2 - 300px / 2)
+    right: 0
+    display: flex
+    gap: 10px
+    height: 50px
+    width: 300px
+
+.close-button
+    position: absolute
+    top: calc(16% - 2%)
+    left: calc(38% + 500px + 2%)
+    right: 0
+    display: flex
+    justify-content: center
+    gap: 10px
+    height: 50px
+    width: 50px
+    z-index: 2    
+
+button 
+    background-color: main_style.$main_color
+    color: main_style.$text_color
+    border: none
+    padding: 12px 24px
+    font-size: 16px
+    border-radius: main_style.$standart_box_radius
+    cursor: pointer
+    transition: all 0.3s ease
+    box-shadow: main_style.$standart_box_shadow
+    
+    &:hover 
+        background-color: main_style.$main_color
+        transform: scale(1.05)
+
+    &:active 
+        transform: scale(0.98)
+
+@keyframes shake 
+    0% 
+        transform: translateX(0)
+    
+    25% 
+        transform: translateX(-5px)
+    
+    50% 
+        transform: translateX(5px)
+    
+    75% 
+        transform: translateX(-5px)
+    
+    100% 
+        transform: translateX(0)
+
+@keyframes sizeUp 
+    0% 
+        transform: scale(1)
+    
+    25% 
+        transform: scale(1.02)
+    
+    50% 
+        transform: scale(1.04)
+    
+    75% 
+        transform: scale(1.02)
+    
+    100% 
+        transform: scale(1)

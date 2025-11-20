@@ -1,0 +1,23 @@
+@use "main_style"
+
+$popover_background: #ffffff
+
+.popover 
+    position: fixed
+    width: 300px
+    height: auto
+    background: fixed
+    margin: auto
+    background-color: $popover_background
+    z-index: 1
+
+.dialog-window 
+    position: fixed
+    width: 600px
+    height: 300px
+    top: 30%
+    left: 36%
+    border: 10px groove main_style.$secondary_color
+    border-radius: main_style.$standart_box_radius
+    background-color: main_style.$main_color
+    z-index: 2

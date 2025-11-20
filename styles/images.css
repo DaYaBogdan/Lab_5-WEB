@@ -1,0 +1,138 @@
+a, li, h3, h2 {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+body {
+  background-color: #1a0420;
+  font-family: "Segoe UI", sans-serif;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/background/background.gif);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.menu {
+  width: 100%;
+  height: 7%;
+  background-color: #1a0420;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.borderTable table {
+  border: 2px solid #8e24aa;
+  border-collapse: collapse;
+}
+.borderTable td {
+  border: 2px solid #8e24aa;
+  text-align: center;
+}
+
+.strip {
+  width: 92%;
+  margin-top: 5%;
+  margin-left: 2%;
+  background-color: #29043a;
+  padding: 2%;
+  border-radius: 20px;
+}
+.strip table {
+  border-collapse: separate;
+  border-spacing: 50px 35px;
+  width: auto;
+}
+.strip h1, .strip h4, .strip h3, .strip h2 {
+  color: #ffffff;
+  margin: 10px 20px;
+  text-align: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+}
+
+.dropdown-button {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1a0420;
+  border: 3px solid #8e24aa;
+  border-radius: 20px;
+  min-width: 200px;
+  z-index: 2;
+}
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content.active {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0);
+  padding: 0px;
+}
+
+.background {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  background: fixed;
+  margin: auto;
+  background-color: rgba(26, 4, 32, 0.5);
+  z-index: 1;
+}
+
+img {
+  height: 600px;
+  width: 450px;
+  border-radius: 20px;
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.image-block {
+  align-items: center;
+  text-align: center;
+}
+.image-block img {
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.background img {
+  height: 800px;
+  width: 500px;
+  border-radius: 8px;
+  position: absolute;
+  top: 16%;
+  left: 38%;
+}/*# sourceMappingURL=images.css.map */

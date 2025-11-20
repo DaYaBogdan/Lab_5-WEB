@@ -1,0 +1,36 @@
+@use "main_style"
+    
+$image_height: 600px
+$image_width: 450px
+$image_border_radius: 20px
+
+%image-template
+    height: $image_height
+    width: $image_width
+    border-radius: $image_border_radius
+
+img
+    @extend %image-template
+
+.image-row 
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    margin-bottom: 20px
+    gap: 20px
+
+.image-block 
+    @include main_style.everything_center()
+
+    img
+        height: $image_height - 200px
+        width: $image_width - 150px
+        border-radius: $image_border_radius - 10px
+
+.background
+    img
+        height: 800px
+        width: 500px
+        border-radius: 8px
+        position: absolute
+        top: 16%
+        left: 38%

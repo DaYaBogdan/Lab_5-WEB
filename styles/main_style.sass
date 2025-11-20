@@ -1,0 +1,114 @@
+$main_color: #8e24aa
+$secondary_color: #29043a
+$triplet_color: #d3aaff
+$header_color: #1a0420
+$text_color: #ffffff
+
+$standart_box_radius: 10px
+$standart_box_shadow: 0 0 10px $triplet_color
+$background_shadow: rgba($header_color, 0.5)
+ 
+@mixin everything_center()
+    align-items: center
+    text-align: center
+
+a 
+    color: $text_color
+    text-decoration: none
+
+h2
+    @extend a
+
+h3
+    @extend a
+
+li
+    @extend a
+
+body
+    background-color: $header_color
+    font-family: "Segoe UI", sans-serif
+    
+    &::before
+        content: ""
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-image: url(../images/background/background.gif)
+        background-size: cover
+        background-position: center
+        z-index: -1
+        opacity: 0.3
+
+.menu 
+    width: 100%
+    height: 7%
+    background-color: $header_color
+    display: flex
+    flex-direction: row
+    justify-content: center
+    gap: 4%
+    position: fixed
+    top: 0
+    z-index: 2
+
+.strip 
+    width: 92%
+    margin-top: 5%
+    margin-left: 2%
+    background-color: $secondary_color
+    padding: 2%
+    border-radius: 20px
+    
+    h1
+        color: $text_color
+        margin: 10px 20px
+        text-align: center
+    h2
+        @extend h1
+    h3
+        @extend h1
+    h4 
+        @extend h1
+
+.dropdown 
+    position: relative
+    display: inline-block
+    @include everything_center()
+
+
+.dropdown-button 
+    cursor: pointer
+
+.dropdown-content 
+    display: none
+    position: absolute
+    background-color: $header_color
+    border: 3px solid $main_color
+    border-radius: 20px 
+    min-width: 200px
+    z-index: 2
+
+    li 
+        list-style: none
+
+
+.dropdown-content.active 
+    display: flex
+    flex-direction: column
+    transform: translateY(0)
+    padding: 0px
+
+.background 
+    position: fixed
+    top: 0%
+    left: 0%
+    right: 0%
+    width: 100%
+    height: 100%
+    background: fixed
+    margin: auto
+    background-color: $background_shadow
+    z-index: 1

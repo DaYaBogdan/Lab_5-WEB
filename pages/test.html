@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>test</title>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../scripts/dialogWindow.js"></script>
+    <script src="../scripts/test.js"></script>
+    <script src="../scripts/menu.js"></script>
+    <link rel="stylesheet" href="../styles/tables.css" />
+    <link rel="stylesheet" href="../styles/buttons.css" />
+    <link rel="stylesheet" href="../styles/inputs.css" />
+    <link rel="stylesheet" href="../styles/popover.css" />
+    <link rel="stylesheet" href="../styles/main_style.css" />
+  </head>
+
+  <body>
+    <script>
+      createMenu();
+    </script>
+    <style>
+      .strip h1,
+      .strip h2,
+      .strip h3 {
+        margin: auto;
+        text-align: left;
+      }
+    </style>
+
+    <div class="strip">
+      <form action="mailto:bogsm228@gmail.com" method="post" enctype="text/plain" id="testForm">
+        <table>
+          <tr>
+            <td>
+              <label for="FIO"> <h2>Полное имя</h2></label>
+            </td>
+            <td>
+              <label for="group"> <h2>Группа</h2></label>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>
+              <input class="text" type="text" name="FIO" />
+            </td>
+            <td>
+              <select name="group" id="group">
+                <option value="IT/b-24-3-o">IT/b-24-3-o</option>
+                <option value="IS/b-23-3-o">IS/b-23-3-o</option>
+                <option value="PI/b-23-1-o">PI/b-23-1-o</option>
+              </select>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+        <fieldset>
+          <legend>
+            <h1>Основы программирования и алгоритмические языки</h1>
+          </legend>
+
+          <table>
+            <tr>
+              <td colspan="4">
+                <h3>1. Какой тип данных чаще всего используется для хранения целых чисел в языках программирования?</h3>
+                <select name="question1" id="question1" style="resize: none; width: 200px; height: 45px">
+                  <option value="float">float</option>
+                  <option value="int">int</option>
+                  <option value="string">string</option>
+                  <option value="char">char</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="4">
+                <h3>2. Что такое переменная в контексте программирования и какова её роль в алгоритмах?</h3>
+                <textarea placeholder="Переменная -" style="resize: none; width: 600px; height: 100px" id="secondAnswer" required></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="4">
+                <h3>3. Какой элемент является обязательным в структуре алгоритма?</h3>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <h3 style="display: flex">
+                  Цикл
+                  <input type="radio" name="question3" id="question3_1" value="Цикл" />
+                </h3>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <h3 style="display: flex">
+                  Графический интерфейс
+                  <input type="radio" name="question3" id="question3_2" value="Графический интерфейс" />
+                </h3>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <h3 style="display: flex">
+                  Начало и конец
+                  <input type="radio" name="question3" id="question3_3" value="Начало и конец" />
+                </h3>
+              </td>
+            </tr>
+
+            <tr></tr>
+
+            <tr>
+              <td>
+                <button type="submit">Отправить</button>
+              </td>
+              <td>
+                <button type="reset" name="reset">Отчистить форму</button>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="menu">
+      <a href="main_page.html">
+        <h2>Главная страница</h2>
+      </a>
+      <a href="about.html">
+        <h2>Обо мне</h2>
+      </a>
+      <div class="dropdown">
+        <h2 class="dropdown-button">Интересы</h2>
+        <ul class="dropdown-content">
+          <li>
+            <a href="interests.html#Хобби"><h2>Хобби</h2></a>
+          </li>
+          <li>
+            <a href="interests.html#Книги"><h2>Книги</h2></a>
+          </li>
+          <li>
+            <a href="interests.html#Музыка"><h2>Музыка</h2></a>
+          </li>
+          <li>
+            <a href="interests.html#Фильмы"><h2>Фильмы</h2></a>
+          </li>
+        </ul>
+      </div>
+      <a href="lessons.html">
+        <h2>Учёба</h2>
+      </a>
+      <a href="album.html">
+        <h2>Альбом</h2>
+      </a>
+      <a href="contacts.html">
+        <h2>Связь</h2>
+      </a>
+      <a href="test.html">
+        <h2>Тест</h2>
+      </a>
+      <a href="history.html">
+        <h2>История</h2>
+      </a>
+      <h2 id="date">date</h2>
+    </div>
+
+    <script src="../scripts/history_tracker.js"></script>
+  </body>
+</html>
