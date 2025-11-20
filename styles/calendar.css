@@ -34,15 +34,6 @@ body::before {
   z-index: 2;
 }
 
-.borderTable table {
-  border: 2px solid #8e24aa;
-  border-collapse: collapse;
-}
-.borderTable td {
-  border: 2px solid #8e24aa;
-  text-align: center;
-}
-
 .strip {
   width: 92%;
   margin-top: 5%;
@@ -50,11 +41,6 @@ body::before {
   background-color: #29043a;
   padding: 2%;
   border-radius: 20px;
-}
-.strip table {
-  border-collapse: separate;
-  border-spacing: 50px 35px;
-  width: auto;
 }
 .strip h1, .strip h4, .strip h3, .strip h2 {
   color: #ffffff;
@@ -105,6 +91,85 @@ body::before {
   z-index: 1;
 }
 
+.buttons {
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 60%;
+  left: 35%;
+  right: 0;
+  display: flex;
+  gap: 10px;
+  height: 50px;
+  width: 300px;
+}
+
+.close-button {
+  position: absolute;
+  top: 14%;
+  left: calc(38% + 500px + 2%);
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 50px;
+  width: 50px;
+  z-index: 2;
+}
+
+button {
+  background-color: #8e24aa;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #d3aaff;
+}
+button:hover {
+  background-color: #8e24aa;
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.98);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes sizeUp {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.02);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  75% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .calendar {
   font-family: Arial, sans-serif;
   max-width: 350px;

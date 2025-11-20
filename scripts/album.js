@@ -53,7 +53,7 @@ function prepareBigImage() {
 
   statistic = document.createElement("h2");
   buttonContainer = document.createElement("div");
-  buttonContainer.classList.add("buttons");
+  buttonContainer.classList.add("albumButtons");
 
   bigImgBack.appendChild(buttonContainer);
   buttonContainer.appendChild(buttonLeft);

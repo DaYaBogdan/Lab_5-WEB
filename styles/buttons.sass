@@ -1,26 +1,34 @@
 @use "main_style"
 
-.buttons
+$dialog_button_width: 100px
+
+%buttons-container-template
     @include main_style.everything_center()
-    position: absolute
-    top: calc(16% + 800px + 2%)
-    left: calc(39% + 500px / 2 - 300px / 2)
+    position: relative
     right: 0
     display: flex
     gap: 10px
     height: 50px
-    width: 300px
+
+.albumButtons
+    @extend %buttons-container-template
+    top: calc(16% + 800px + 2%)
+    left: calc(40% + 500px / 2 - 300px / 2)
+
+.dialogButtons
+    @extend %buttons-container-template
+    top: 60%
+    left: calc(50% - $dialog_button_width)
+
+    button
+        width: $dialog_button_width
+        h2
+            margin: 0px
 
 .close-button
-    position: absolute
-    top: calc(16% - 2%)
-    left: calc(38% + 500px + 2%)
-    right: 0
-    display: flex
-    justify-content: center
-    gap: 10px
-    height: 50px
-    width: 50px
+    @extend %buttons-container-template
+    top: 15%
+    left: calc(40% + 500px)
     z-index: 2    
 
 button 

@@ -34,27 +34,12 @@ body::before {
   z-index: 2;
 }
 
-.borderTable table {
-  border: 2px solid #8e24aa;
-  border-collapse: collapse;
-}
-.borderTable td {
-  border: 2px solid #8e24aa;
-  text-align: center;
-}
-
 .strip {
   width: 92%;
-  margin-top: 5%;
-  margin-left: 2%;
+  margin: 5% 2%;
   background-color: #29043a;
   padding: 2%;
   border-radius: 20px;
-}
-.strip table {
-  border-collapse: separate;
-  border-spacing: 50px 35px;
-  width: auto;
 }
 .strip h1, .strip h4, .strip h3, .strip h2 {
   color: #ffffff;
@@ -131,7 +116,7 @@ img {
 .background img {
   height: 800px;
   width: 500px;
-  border-radius: 8px;
+  border-radius: 20px;
   position: absolute;
   top: 16%;
   left: 38%;

@@ -36,8 +36,7 @@ body::before {
 
 .strip {
   width: 92%;
-  margin-top: 5%;
-  margin-left: 2%;
+  margin: 5% 2%;
   background-color: #29043a;
   padding: 2%;
   border-radius: 20px;

@@ -1,0 +1,18 @@
+@use "main_style"
+@use "buttons"
+
+.dialog-window 
+    position: fixed
+    width: 600px
+    height: 300px
+    top: 30%
+    left: 36%
+    border: 10px groove main_style.$secondary_color
+    border-radius: main_style.$standart_box_radius
+    background-color: main_style.$main_color
+    z-index: 2
+
+    h1
+        @include main_style.everything_center()
+        color: white
+        margin: 40px 20px 

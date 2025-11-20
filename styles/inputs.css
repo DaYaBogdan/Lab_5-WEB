@@ -34,27 +34,12 @@ body::before {
   z-index: 2;
 }
 
-.borderTable table {
-  border: 2px solid #8e24aa;
-  border-collapse: collapse;
-}
-.borderTable td {
-  border: 2px solid #8e24aa;
-  text-align: center;
-}
-
 .strip {
   width: 92%;
-  margin-top: 5%;
-  margin-left: 2%;
+  margin: 5% 2%;
   background-color: #29043a;
   padding: 2%;
   border-radius: 20px;
-}
-.strip table {
-  border-collapse: separate;
-  border-spacing: 50px 35px;
-  width: auto;
 }
 .strip h1, .strip h4, .strip h3, .strip h2 {
   color: #ffffff;
@@ -125,18 +110,18 @@ body::before {
 
 .accept {
   background-color: #036d26;
-  border: 1px solid #05792b;
+  border: 1px solid rgb(4.3660714286, 158.6339285714, 55.3035714286);
   animation: sizeUp 0.6s;
 }
 
 .error {
   background-color: #6d0303;
-  border: 1px solid #960505;
-  animation: shake 0.4s;
+  border: 1px solid rgb(158.6339285714, 4.3660714286, 4.3660714286);
+  animation: sizeUp 0.6s;
 }
 
 select option {
-  background-color: #2e0b45;
+  background-color: #8e24aa;
   color: #ffffff;
 }
 

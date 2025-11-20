@@ -174,4 +174,21 @@ button:active {
   100% {
     transform: scale(1);
   }
-}/*# sourceMappingURL=buttons.css.map */
+}
+.dialog-window {
+  position: fixed;
+  width: 600px;
+  height: 300px;
+  top: 30%;
+  left: 36%;
+  border: 10px groove #29043a;
+  border-radius: 10px;
+  background-color: #8e24aa;
+  z-index: 2;
+}
+.dialog-window h1 {
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin: 40px 20px;
+}/*# sourceMappingURL=dialog_window.css.map */

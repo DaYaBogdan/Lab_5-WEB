@@ -8,6 +8,8 @@ $standart_box_radius: 10px
 $standart_box_shadow: 0 0 10px $triplet_color
 $background_shadow: rgba($header_color, 0.5)
  
+$menu_height: 7%
+
 @mixin everything_center()
     align-items: center
     text-align: center
@@ -44,7 +46,7 @@ body
 
 .menu 
     width: 100%
-    height: 7%
+    height: $menu_height
     background-color: $header_color
     display: flex
     flex-direction: row
@@ -56,8 +58,7 @@ body
 
 .strip 
     width: 92%
-    margin-top: 5%
-    margin-left: 2%
+    margin: 5% 2%
     background-color: $secondary_color
     padding: 2%
     border-radius: 20px

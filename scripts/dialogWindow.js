@@ -29,8 +29,7 @@ function dialogWindowCreate() {
   const buttonBlock = document.createElement("div");
   const button_yes = document.createElement("button");
   const button_no = document.createElement("button");
-  buttonBlock.classList.add("buttons");
-  buttonBlock.style = "top: 60%; left: 24%";
+  buttonBlock.classList.add("dialogButtons");
   button_yes.style = "background-color: green";
   button_no.style = "background-color: red";
   button_yes.id = "continue_button";
@@ -40,8 +39,6 @@ function dialogWindowCreate() {
   const text_button_no = document.createElement("h2");
   text_button_no.textContent = "No";
   text_button_yes.textContent = "Yes";
-  text_button_no.style = "margin: 0";
-  text_button_yes.style = "margin: 0";
 
   button_yes.appendChild(text_button_yes);
   button_no.appendChild(text_button_no);

@@ -1,5 +1,21 @@
 @use "main_style"
 
+$accept_color: #036d26
+$error_color: #6d0303
+$message_time: 0.6s
+
+@mixin setupMessages($type)
+    $main_color: #ffffff
+    @if $type == accept
+        $main_color: $accept_color
+    @else
+        $main_color: $error_color
+        
+    background-color: $main_color
+    border: 1px solid lighten($main_color, 10%)
+    animation: sizeUp $message_time
+    
+
 .text
     background-color: main_style.$secondary_color
     color: main_style.$text_color
@@ -18,21 +34,18 @@
         box-shadow:  main_style.$standart_box_shadow
 
 .accept 
-    background-color: #036d26
-    border: 1px solid #05792b
-    animation: sizeUp 0.6s
+    @include setupMessages($type: accept)
+    
 
 .error 
-    background-color: #6d0303
-    border: 1px solid #960505
-    animation: shake 0.4s
+    @include setupMessages($type: error)
     
 
 select
     @extend .text
     option 
-        background-color: #2e0b45
-        color: #ffffff
+        background-color: main_style.$main_color
+        color: main_style.$text_color
 
 textarea 
     @extend .text
